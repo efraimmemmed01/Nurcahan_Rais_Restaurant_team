@@ -1,0 +1,19 @@
+/* Button */
+.button {
+  padding: 15px;
+  border-radius: 350px;
+  background-color: #9cab84;
+  color: white;
+  transition: 0.2s;
+  cursor: pointer6;
+}
+
+.button:hover {
+  background-color: #c5d89d;
+  color: gray;
+}
+
+.button:active {
+  background-color: #89986D;
+  color: white;
+}

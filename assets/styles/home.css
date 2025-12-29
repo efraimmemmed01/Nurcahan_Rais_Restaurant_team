@@ -1,0 +1,6 @@
+#main-content {
+  background-color: aqua;
+  display: flex;
+  width: 100%;
+  padding: 0 25%;
+}
