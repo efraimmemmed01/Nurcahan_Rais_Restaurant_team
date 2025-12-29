@@ -22,8 +22,12 @@ nav ul {
   gap: 20px;
 }
 
-.logo img {
+.logo {
   width: 325px;
+}
+
+.logo img {
+  width: 100%;
 }
 
 nav a {

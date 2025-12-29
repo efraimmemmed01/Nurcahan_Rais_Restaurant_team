@@ -5,7 +5,7 @@
   background-color: #9cab84;
   color: white;
   transition: 0.2s;
-  cursor: pointer6;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -14,6 +14,6 @@
 }
 
 .button:active {
-  background-color: #89986D;
+  background-color: #89986d;
   color: white;
 }
