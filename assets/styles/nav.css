@@ -4,6 +4,7 @@ header {
   width: 100%;
   display: flex;
   position: fixed;
+  z-index: 1000;
   background-color: #f6f0d7;
   align-items: center;
   gap: 50px;
@@ -13,12 +14,15 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  padding: 0 !important;
+  margin: 0 !important;
   gap: 20px;
 }
 
