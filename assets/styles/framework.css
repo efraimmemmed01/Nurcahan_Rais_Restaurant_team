@@ -43,6 +43,7 @@
 /* Aside */
 .side {
   display: flex;
+  width: 80%;
   flex-direction: column;
   gap: 30px;
 }

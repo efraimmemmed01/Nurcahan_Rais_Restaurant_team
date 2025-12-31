@@ -9,6 +9,7 @@ header {
   align-items: center;
   gap: 50px;
   padding: 0 50px;
+  box-sizing: border-box;
 }
 
 nav {
@@ -60,7 +61,7 @@ nav a:active {
   border-radius: 20% !important;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #nav-right {
     display: none;
   }
@@ -78,9 +79,5 @@ nav a:active {
 
   nav {
     display: none;
-  }
-
-  #nav-toggle {
-    display: flex;
   }
 }
