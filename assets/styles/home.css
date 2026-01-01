@@ -58,11 +58,21 @@
 
 #specs {
   display: flex;
+  flex-direction: column;
   background-color: white;
   width: 50%;
-  height: 50%;
+  height: 60%;
   overflow: auto;
   border-radius: 0 0 50px 0;
+  padding: 25px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#specs p {
+  width: 70%;
 }
 
 @media (max-width: 1300px) {
@@ -93,6 +103,10 @@
 
   .buttons {
     justify-content: center !important;
+  }
+
+  #specs h1 {
+    font-size: 28px;
   }
 }
 
