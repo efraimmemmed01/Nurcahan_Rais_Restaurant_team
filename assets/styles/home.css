@@ -29,7 +29,7 @@
 .center-content img {
   width: 100%;
   object-fit: cover;
-  height: auto;
+  height: 500px;
   max-height: 500px;
   border-radius: 7px;
 }
