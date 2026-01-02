@@ -62,9 +62,10 @@ main {
   padding: 0 10px;
 }
 
-.item input {
+.quantity {
   height: 20px;
   width: 50px;
+  border-radius: 7px;
 }
 
 .del-button {
@@ -136,6 +137,7 @@ main {
 @media (max-width: 800px) {
   .page-head {
     bottom: inherit;
+    justify-content: center;
   }
 }
 
