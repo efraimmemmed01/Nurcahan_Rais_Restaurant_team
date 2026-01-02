@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushi Shop - Səbət</title>
+
+    <link rel="stylesheet" href="./assets/styles/nav.css" />
+    <link rel="stylesheet" href="./assets/styles/sehife.css" />
+    <link rel="stylesheet" href="./assets/styles/sebet.css" />
+
+    <link rel="stylesheet" href="./assets/styles/framework.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="home.html">
+              <img src="./assets/images/S.png" alt="Sushi Logo" />
+            </a>
+          </li>
+
+          <li>
+            <a href="home.html">
+              <img src="./assets/images/home.png" alt="Home Esas Sehife" />
+            </a>
+          </li>
+
+          <li>
+            <a href="menyu.html">
+              <img src="./assets/images/menu.png" alt="Menu Menyu" />
+            </a>
+          </li>
+
+          <li class="nav-btn-active">
+            <a href="sebet.html">
+              <img src="./assets/images/cart.png" alt="Shopping Cart Sebet" />
+            </a>
+          </li>
+
+          <li>
+            <a href="home.html">
+              <img src="./assets/images/exit.png" alt="Cixis" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-head">
+        <h2>
+          CART
+          <div class="underline"></div>
+        </h2>
+      </section>
+
+      <section class="content">
+        <article class="items">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="item">
+                <td>
+                  <img
+                    style="border-radius: 50%; width: 80px"
+                    src="./image.png"
+                    alt=""
+                  />
+                </td>
+                <td>Smashed Avo</td>
+                <td><p>$20.00</p></td>
+                <td><input value="1" min="1" type="number" /></td>
+                <td><button class="del-button">X</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <aside class="payment">
+          <div class="confirm">
+            <h3>Your Subtotal</h3>
+            <p>Subtotal $0.00</p>
+            <button class="button" disabled>Confirm Order</button>
+          </div>
+
+          <div class="promo">
+            <h3>Promo Code</h3>
+            <input class="input" type="text" />
+            <button class="button">Apply</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
