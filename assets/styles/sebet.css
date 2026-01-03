@@ -1,56 +1,32 @@
-main {
-  padding-left: 140px;
-  height: calc(100vh - 80px);
-  width: 100vw;
-  box-sizing: border-box;
-}
-
-.page-head {
-  display: flex;
-  align-items: center;
-  height: 80px;
-  padding: 0 50px;
-  position: relative;
-  bottom: -30px;
-}
-
-.page-head h2 {
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  font-size: 50px;
-}
-
-/* Cart Content */
 .content {
-  height: 100%;
-  width: 100%;
   display: flex;
-  padding: 50px;
   gap: 50px;
+  padding: 50px;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
 }
 
-/* Items */
+/* ================= ITEMS ================= */
+
 .items {
-  height: 100%;
-  width: 50%;
+  flex: 1;
   background-color: #f1d5bb;
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
+  padding: 25px;
+  overflow-x: auto;
+  box-sizing: border-box;
+  min-width: 0;
+  width: 100%;
 }
 
 .items table {
   width: 100%;
-  padding: 25px;
+  min-width: 100px; /* keeps table usable on mobile */
+  border-collapse: collapse;
   box-sizing: border-box;
 }
 
 .item {
-  width: 100%;
-  max-height: 100px;
   height: 100px;
   text-align: center;
   font-weight: 600;
@@ -58,132 +34,106 @@ main {
 }
 
 .item td {
-  width: 80px;
-  padding: 0 10px;
+  padding: 10px;
 }
 
 .quantity {
-  height: 20px;
   width: 50px;
+  height: 30px;
   border-radius: 7px;
 }
 
+/* Delete button */
 .del-button {
   background: none;
-  color: black;
   border: none;
-  font-weight: 800;
-  font-size: 40px;
-  height: 80px;
-  width: 80px;
-  padding: 0;
   cursor: pointer;
-}
-
-/* Payment */
-.payment {
-  height: 100%;
-  width: 50%;
+  width: 60px;
+  height: 60px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 
-.confirm {
-  height: 50%;
-  width: 80%;
+.del-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* ================= PAYMENT ================= */
+
+.payment {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.confirm,
+.promo {
+  height: 50%;
+  width: 100%;
   background-color: #f1d5bb;
-  padding: 50px;
-  gap: 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
 }
 
 .promo {
-  height: 50%;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background: none;
   border: 2px solid #f1d5bb;
-  padding: 48px;
-  gap: 15px;
 }
 
-/* Additional */
-
+/* Text */
 .confirm p {
-  font-size: 30px;
+  font-size: 24px;
+}
+
+.confirm h3,
+.promo h3 {
+  font-size: clamp(28px, 4vw, 42px);
 }
 
 .confirm button {
   width: 100%;
 }
 
-.confirm h3,
-.promo h3 {
-  font-size: 50px;
-}
-
-/* Mobile */
-@media (max-width: 1200px) {
-  .page-head {
-    bottom: 50px;
-  }
-}
-
-@media (max-width: 800px) {
-  .page-head {
-    bottom: inherit;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 1200px) {
-  main {
-    height: calc(100vh - 80px);
-    padding-left: 0;
-    padding-top: 80px;
-  }
-
+/* ================= MOBILE ================= */
+@media (max-width: 1000px) {
   .content {
     flex-direction: column;
-    height: fit-content;
-    padding: 15px;
-    margin-top: 25px;
-    align-items: center;
+    padding: 20px;
+    gap: 30px;
   }
 
   .items {
-    width: 80%;
-    height: 250px;
-    padding: 50px;
-  }
-
-  .items table {
-    padding: 0;
+    padding: 20px;
   }
 
   .item td {
-    width: 20px;
-    height: 20px;
-  }
-
-  .item img {
-    width: 50px !important;
+    padding: 5px;
   }
 
   .payment {
-    width: 100%;
-    gap: 30px;
-    height: fit-content;
-    justify-content: unset;
+    gap: 20px;
   }
 
-  .confirm,
-  .promo {
-    height: 300px;
+  .promo button {
+    width: 100%;
+  }
+
+  .promo input {
+    padding-left: 5px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .items {
+    width: unset;
   }
 }
