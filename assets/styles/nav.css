@@ -66,6 +66,9 @@ nav ul li:active {
 .nav-btn-active {
   background-color: #f1d5bb;
 }
+.nav-btn-active a img {
+  filter: brightness(0) saturate(100%);
+}
 
 /* For phones */
 @media (max-width: 800px) {
