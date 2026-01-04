@@ -81,6 +81,7 @@
   flex-direction: column;
   gap: 20px;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .promo {
@@ -100,6 +101,11 @@
 
 .confirm button {
   width: 100%;
+}
+
+.confirm button, .promo button {
+  font-size: 24px;
+  font-weight: 600;
 }
 
 /* ================= MOBILE ================= */
